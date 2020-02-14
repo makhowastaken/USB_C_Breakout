@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5C3A0378
+P 6550 3100
+F 0 "J2" H 6577 3076 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 6577 2985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6550 3100 50  0001 C CNN
+F 3 "~" H 6550 3100 50  0001 C CNN
+	1    6550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C3A054B
+P 4850 2500
+F 0 "R1" H 4920 2546 50  0000 L CNN
+F 1 "5.1k" H 4920 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 2500 50  0001 C CNN
+F 3 "~" H 4850 2500 50  0001 C CNN
+	1    4850 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C3A05BA
+P 5250 2600
+F 0 "R2" H 5320 2646 50  0000 L CNN
+F 1 "5.1k" H 5320 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 2600 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C496EE8
+P 3650 3800
+F 0 "#PWR0101" H 3650 3550 50  0001 C CNN
+F 1 "GND" H 3655 3627 50  0000 C CNN
+F 2 "" H 3650 3800 50  0001 C CNN
+F 3 "" H 3650 3800 50  0001 C CNN
+	1    3650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C496F0E
+P 6350 3400
+F 0 "#PWR0102" H 6350 3150 50  0001 C CNN
+F 1 "GND" H 6355 3227 50  0000 C CNN
+F 2 "" H 6350 3400 50  0001 C CNN
+F 3 "" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3400 6350 3300
+Wire Wire Line
+	4400 2000 6350 2000
+Wire Wire Line
+	6350 2000 6350 3000
+Wire Wire Line
+	4400 2500 4700 2500
+Wire Wire Line
+	4400 2600 5100 2600
+Wire Wire Line
+	4400 2800 4400 2900
+Wire Wire Line
+	4400 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 3100
+Wire Wire Line
+	6050 3100 6350 3100
+Wire Wire Line
+	4400 3000 4400 3100
+Wire Wire Line
+	5800 3100 5800 3200
+Wire Wire Line
+	5800 3200 6350 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 5C4977D5
+P 5700 2600
+F 0 "#PWR0103" H 5700 2350 50  0001 C CNN
+F 1 "GND" H 5705 2427 50  0000 C CNN
+F 2 "" H 5700 2600 50  0001 C CNN
+F 3 "" H 5700 2600 50  0001 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2500 5400 2500
+Wire Wire Line
+	5700 2500 5700 2600
+Wire Wire Line
+	5400 2600 5400 2500
+Connection ~ 5400 2500
+Wire Wire Line
+	5400 2500 5700 2500
+Wire Wire Line
+	3500 3800 3650 3800
+Wire Wire Line
+	4400 2000 4400 2300
+Connection ~ 3650 3800
+Wire Wire Line
+	3650 3800 3800 3800
+NoConn ~ 4400 3500
+NoConn ~ 4400 3400
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5D75DF33
+P 3800 2900
+F 0 "J1" H 3905 3767 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3905 3676 50  0000 C CNN
+F 2 "misc_footprints:TYPE-C-31-M-12" H 3950 2900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 2900 50  0001 C CNN
+	1    3800 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4400 3100
+Connection ~ 4400 2900
+Wire Wire Line
+	4400 3100 5800 3100
+$EndSCHEMATC
