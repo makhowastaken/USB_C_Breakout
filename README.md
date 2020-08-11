@@ -1,7 +1,7 @@
 # USB_C_Breakout
 Small, cheap USB Type C breakout boards for power only or USB 2.0 data installations
 
-There are two different versions, one uses a harder to solder but low profile USB 3.0 port, the other uses an easier to solder but slightly taller USB 2.0 Type C port. Both adapters have the CC lines broken out so that resistors may be added (5.1k) so that the adapters will work properly on USB C hosts. 
+There are two different versions, one uses a harder to solder but low profile USB 3.0 port, the other uses an easier to solder but slightly taller USB 2.0 Type C port. Both adapters have the CC lines broken out so that resistors may be added (5.1k SMD 0603) so that the adapters will work properly on USB C hosts. 
 
 
 ## Low Profile Adapter:
